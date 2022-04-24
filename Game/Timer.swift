@@ -38,8 +38,3 @@ class myTimer {
         }
     }
 }
-
-
-protocol CallBack_Timer {
-    func tickDetected(iter: Int)
-}
