@@ -219,28 +219,35 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 </variation>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Kki-1M-8D2">
+                            <button clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NtM-5C-rm1" userLabel="main button play">
                                 <rect key="frame" x="423" y="164.66666666666666" width="80" height="78.666666666666671"/>
-                                <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="2hr-4o-c32">
+                                    <constraint firstAttribute="width" constant="80" id="Cse-Ck-utV">
                                         <variation key="heightClass=compact-widthClass=compact" constant="60"/>
                                         <variation key="heightClass=compact-widthClass=regular" constant="80"/>
                                     </constraint>
-                                    <constraint firstAttribute="width" constant="60" id="Hs9-E7-S17">
+                                    <constraint firstAttribute="height" constant="80" id="KvT-TY-ylt">
                                         <variation key="heightClass=compact-widthClass=compact" constant="60"/>
                                         <variation key="heightClass=compact-widthClass=regular" constant="80"/>
                                     </constraint>
                                 </constraints>
-                            </imageView>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="play.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="StartClikced:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VKB-Hi-Pjq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="fnE-a5-lMO" firstAttribute="top" secondItem="rQ5-mt-bRm" secondAttribute="bottom" constant="10" id="1DX-R1-z4z"/>
+                            <constraint firstItem="NtM-5C-rm1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1G7-a4-CG5"/>
                             <constraint firstItem="7zS-d9-XK8" firstAttribute="leading" secondItem="F5q-yt-ctl" secondAttribute="leading" id="5l1-8g-QvG"/>
                             <constraint firstItem="2n4-5d-4pP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7go-9U-aFM"/>
                             <constraint firstItem="Zq6-rc-gal" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8mM-47-h1k"/>
+                            <constraint firstItem="NtM-5C-rm1" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Bed-61-Lun"/>
                             <constraint firstItem="1XZ-Iu-3KC" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="DvI-3O-Kdb"/>
                             <constraint firstItem="Vmr-e1-xfD" firstAttribute="top" secondItem="F5q-yt-ctl" secondAttribute="bottom" constant="10" id="Eue-8N-EUe">
                                 <variation key="heightClass=compact-widthClass=compact" constant="10"/>
@@ -250,6 +257,7 @@
                                 <variation key="heightClass=compact-widthClass=compact" constant="20"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="40"/>
                             </constraint>
+                            <constraint firstItem="NtM-5C-rm1" firstAttribute="leading" secondItem="0aK-ap-u2T" secondAttribute="trailing" constant="25" id="Ga1-4R-5XM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZgJ-dG-Ka6" secondAttribute="trailing" constant="20" id="GzV-xr-aoN">
                                 <variation key="heightClass=compact-widthClass=compact" constant="20"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="40"/>
@@ -263,7 +271,6 @@
                             <constraint firstItem="ZgJ-dG-Ka6" firstAttribute="trailing" secondItem="rQ5-mt-bRm" secondAttribute="trailing" id="Jyk-F6-7K4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7zS-d9-XK8" secondAttribute="bottom" constant="20" id="K9o-wJ-4hn"/>
                             <constraint firstAttribute="bottom" secondItem="Zq6-rc-gal" secondAttribute="bottom" id="LjU-3G-XV0"/>
-                            <constraint firstItem="Kki-1M-8D2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Nj3-Av-Rio"/>
                             <constraint firstItem="Vmr-e1-xfD" firstAttribute="leading" secondItem="F5q-yt-ctl" secondAttribute="leading" id="P8Q-jh-JVs"/>
                             <constraint firstAttribute="trailing" secondItem="Zq6-rc-gal" secondAttribute="trailing" id="QWR-Lg-9HS"/>
                             <constraint firstItem="0aK-ap-u2T" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="SKi-n4-7BZ"/>
@@ -272,14 +279,11 @@
                                 <variation key="heightClass=compact-widthClass=regular" constant="30"/>
                             </constraint>
                             <constraint firstItem="7zS-d9-XK8" firstAttribute="top" secondItem="mQH-h7-4Dk" secondAttribute="bottom" constant="10" id="Zcb-II-fCJ"/>
-                            <constraint firstItem="1XZ-Iu-3KC" firstAttribute="leading" secondItem="Kki-1M-8D2" secondAttribute="trailing" constant="25" id="bCF-1j-iNh"/>
                             <constraint firstItem="mQH-h7-4Dk" firstAttribute="leading" secondItem="F5q-yt-ctl" secondAttribute="leading" id="bzO-XL-abR"/>
-                            <constraint firstItem="Kki-1M-8D2" firstAttribute="leading" secondItem="0aK-ap-u2T" secondAttribute="trailing" constant="25" id="crO-mM-he4"/>
                             <constraint firstItem="YnI-P2-kct" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="e3f-wi-JD2">
                                 <variation key="heightClass=compact-widthClass=compact" constant="22.5"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="55"/>
                             </constraint>
-                            <constraint firstItem="Kki-1M-8D2" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="fZu-fM-zZK"/>
                             <constraint firstItem="F5q-yt-ctl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="jTc-PI-Idv">
                                 <variation key="heightClass=compact-widthClass=compact" constant="20"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="40"/>
@@ -287,12 +291,22 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fnE-a5-lMO" secondAttribute="bottom" constant="20" id="jd0-tt-klu"/>
                             <constraint firstItem="ZgJ-dG-Ka6" firstAttribute="trailing" secondItem="P9l-Ma-KJr" secondAttribute="trailing" id="nph-zO-cWW"/>
                             <constraint firstItem="YnI-P2-kct" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ssR-mJ-Qbq"/>
+                            <constraint firstItem="1XZ-Iu-3KC" firstAttribute="leading" secondItem="NtM-5C-rm1" secondAttribute="trailing" constant="25" id="uFb-Io-rjK"/>
                             <constraint firstItem="P9l-Ma-KJr" firstAttribute="top" secondItem="ZgJ-dG-Ka6" secondAttribute="bottom" constant="10" id="zAv-Hp-JQj">
                                 <variation key="heightClass=compact-widthClass=compact" constant="10"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="15"/>
                             </constraint>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="main_BTN_start" destination="NtM-5C-rm1" id="a3A-hz-1TP"/>
+                        <outlet property="main_IMG_card_left" destination="0aK-ap-u2T" id="h6u-4F-dh0"/>
+                        <outlet property="main_IMG_card_right" destination="1XZ-Iu-3KC" id="D57-dY-4j9"/>
+                        <outlet property="main_LBL_round_number" destination="2n4-5d-4pP" id="Mrn-AO-ShP"/>
+                        <outlet property="main_LBL_score_left" destination="7zS-d9-XK8" id="HbL-zR-CL6"/>
+                        <outlet property="main_LBL_score_right" destination="fnE-a5-lMO" id="JFC-XT-LCD"/>
+                        <outlet property="main_LBL_title" destination="YnI-P2-kct" id="nZm-7C-uIJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -302,7 +316,7 @@
     <resources>
         <image name="ace-of-spades copy" width="512" height="512"/>
         <image name="background" width="1500" height="1000"/>
-        <image name="play.circle" catalog="system" width="128" height="121"/>
+        <image name="play.circle.fill" catalog="system" width="128" height="121"/>
         <image name="profile" width="512" height="512"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
